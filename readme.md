@@ -4,7 +4,10 @@ A cool Shooter
 ## Features
 
 - Targets
-- score
+- Score
+- Start and restart button
+- Timer
+- Sound
 
 
 
