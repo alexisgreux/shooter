@@ -9,6 +9,11 @@ shooter.$timer = shooter.$container.querySelector('.timer')
 shooter.$score = shooter.$container.querySelector('.score .value')
 shooter.score = 0
 
+
+shooter.sounds = {}
+shooter.sounds.ding = new Audio('ding.mp3')
+shooter.sounds.finish = new Audio ('finish.mp3')
+
 /**
  * Methods
  */
@@ -40,6 +45,9 @@ shooter.shootTarget = (_$target) =>
     shooter.score++
     shooter.$score.textContent = shooter.score
     // Play sound
+    shooter.sounds.ding.play()
+
+
 }
 
 shooter.addTarget()
