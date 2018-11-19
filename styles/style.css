@@ -7,7 +7,7 @@
     height: 100vh;
     background: radial-gradient(circle at center, #444444, #000000);
     font-family: Helvetica, Arial;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .shooter .start
@@ -26,7 +26,7 @@
 
 .shooter .score
 {
-    display:none;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,7 +49,7 @@
 
 .shooter .timer
 {
-    display:none;
+    display: none;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -62,7 +62,7 @@
 
 .shooter .targets
 {
-    display:none;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -73,8 +73,8 @@
 .shooter .targets .target
 {
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 55%;
+    left: 29%;
     width: 12vmin;
     height: 12vmin;
     margin-top: -6vmin;
@@ -110,19 +110,17 @@
     transform: translate(-50%, -50%);
 }
 
-
 .shooter.step-start .start,
 .shooter.step-game .score,
 .shooter.step-game .timer,
 .shooter.step-game .targets,
 .shooter.step-end .start,
 .shooter.step-end .score
-
 {
-    display:block;
+    display: block;
 }
 
 .shooter.step-end .score
 {
-    top:20%;
+    top: 25%;
 }
